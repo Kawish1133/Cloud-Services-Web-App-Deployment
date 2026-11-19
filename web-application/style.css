@@ -1,0 +1,227 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #172033;
+}
+
+/* Navigation */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    background: #071b35;
+    color: white;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links a:hover {
+    color: #f5bd45;
+}
+
+.nav-btn, .main-btn {
+    background: #f5bd45;
+    color: #071b35;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* Hero section */
+
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    padding: 70px 8%;
+    color: white;
+
+    background:
+        linear-gradient(90deg, rgba(4,20,40,.95), rgba(4,20,40,.45)),
+        url("https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=1600")
+        center/cover;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tagline {
+    color: #f5bd45;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    line-height: 1.7;
+    margin-bottom: 28px;
+}
+
+/* Routes */
+
+.routes, .booking, .contact {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.section-text {
+    margin-bottom: 30px;
+    color: #667085;
+}
+
+.route-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.route-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.07);
+}
+
+.route-card h3 {
+    color: #0b3765;
+    margin-bottom: 20px;
+}
+
+.route-card p {
+    margin: 12px 0;
+}
+
+/* Booking */
+
+.booking {
+    background: #eaf0f7;
+}
+
+.booking form {
+    max-width: 550px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.booking input, .booking select {
+    padding: 15px;
+    border: 1px solid #ccd4df;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.booking button {
+    padding: 15px;
+    background: #0b3765;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.booking button:hover {
+    background: #f0ad27;
+    color: #071b35;
+}
+
+#message {
+    font-weight: bold;
+    color: #087443;
+}
+
+/* Contact */
+
+.contact p {
+    margin: 15px;
+}
+
+.whatsapp {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    background: #168b50;
+}
+
+/* Footer */
+
+footer {
+    background: #071b35;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    line-height: 2;
+}
+
+/* Mobile responsive */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .route-container {
+        grid-template-columns: 1fr;
+    }
+
+    .routes, .booking, .contact {
+        padding: 45px 5%;
+    }
+}
+

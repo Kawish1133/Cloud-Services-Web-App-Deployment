@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shaheen Transport | Touseef & Co.</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">🚌 Shaheen Transport</div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#routes">Routes</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a class="nav-btn" href="#booking">Book Now</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <p class="tagline">SAFE JOURNEY • COMFORTABLE TRAVEL</p>
+
+            <h1>
+                Your Journey,<br>
+                Our Responsibility.
+            </h1>
+
+            <p>
+                Travel comfortably from Rawalpindi to Drosh and Chitral
+                with Shaheen Transport – Touseef & Co.
+            </p>
+
+            <a href="#booking" class="main-btn">
+                Book Your Seat
+            </a>
+        </div>
+
+    </section>
+
+    <section class="routes" id="routes">
+
+        <h2>Our Transport Routes</h2>
+        <p class="section-text">Travel with us to your destination.</p>
+
+        <div class="route-container">
+
+            <div class="route-card">
+                <h3>Rawalpindi → Drosh</h3>
+                <p>Departure: 8:00 PM</p>
+                <p>Location: Shaheen Adda, Rawalpindi</p>
+            </div>
+
+            <div class="route-card">
+                <h3>Rawalpindi → Chitral</h3>
+                <p>Departure: 8:00 PM</p>
+                <p>Location: Shaheen Adda, Rawalpindi</p>
+            </div>
+
+            <div class="route-card">
+                <h3>Drosh → Rawalpindi</h3>
+                <p>Departure: 8:00 PM</p>
+                <p>Location: Drosh Adda, near Drosh Bazaar</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="booking" id="booking">
+
+        <h2>Book Your Seat</h2>
+        <p>Enter your details to request a reservation.</p>
+
+        <form id="bookingForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Passenger Name"
+                required
+            >
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Phone Number"
+                required
+            >
+
+            <select id="route" required>
+                <option value="">Select Your Route</option>
+                <option value="Rawalpindi to Drosh">Rawalpindi to Drosh</option>
+                <option value="Rawalpindi to Chitral">Rawalpindi to Chitral</option>
+                <option value="Drosh to Rawalpindi">Drosh to Rawalpindi</option>
+            </select>
+
+            <input
+                type="date"
+                id="travelDate"
+                required
+            >
+
+            <input
+                type="number"
+                id="seats"
+                placeholder="Number of Seats"
+                min="1"
+                max="10"
+                required
+            >
+
+            <button type="submit">Send Booking Request</button>
+
+        </form>
+
+        <p id="message"></p>
+
+    </section>
+
+    <section class="contact" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p><strong>Company:</strong> Shaheen Transport – Touseef & Co.</p>
+
+        <p><strong>Booking:</strong> +92 347 9696715</p>
+
+        <p><strong>Rawalpindi:</strong> Shaheen Adda, near New Darbar Adda</p>
+
+        <p><strong>Drosh:</strong> Near Drosh Bazaar</p>
+
+        <p><strong>Departure:</strong> 8:00 PM</p>
+
+        <a href="https://wa.me/923479696715"
+           target="_blank"
+           class="whatsapp">
+            Contact on WhatsApp
+        </a>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Shaheen Transport – Touseef & Co.</p>
+        <p>Safe Journey, Happy Journey!</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
